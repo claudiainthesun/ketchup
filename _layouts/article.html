@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "it" }}">
+{% include head.html %}
+<body>
+	<section class="section">
+		<div class="columns">
+			<div class="column"></div>
+			<div class="column is-8">
+				{% include header.html %}
+
+				<div class="columns article">
+					<div class="column is-8 main-content">
+						<p class="title is-3">{{ page.title }}</p>
+
+						<!-- <p class="subtitle is-5">{{ page.date | date: '%m/%d/%Y' }}</p> -->
+					
+						{{ content }}
+
+						<div class="columns social-sharing">
+							<script type="text/javascript">
+								window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+							</script>
+
+							<div class="column">
+								<a href="https://www.facebook.com/share.php?u=http://thecatchup.it{{ page.url }}&title={{ page.title }}" target="_blank">
+									<div class="fb-share"><span class="fb-icon"></span>Condividi su <b>Facebook</b></div>
+								</a>
+							</div>
+							<div class="column">
+								<a href="https://twitter.com/intent/tweet?text={{ page.title }} (@TheCatchupIT) http://thecatchup.it{{ page.url }}" data-size="large" target="_blank">
+									<div class="twitter-tweet"><span class="twitter-icon"></span>Condividi su <b>Twitter</b></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						{% assign count = 0 %}
+						{% for post in site.posts %}
+							{% if post.featured and count < 3 and post.title != page.title %}
+								<div class="article-window">
+									<a href="{{ site.baseurl }}{{ post.url }}"><p class="title is-4">{{ post.title }}</p></a>
+									<a href="{{ site.baseurl }}{{ post.url }}">
+										<img src="{{ post.image }}"/>
+									</a>
+									<a href="{{ site.baseurl }}{{ post.url }}"><p>{{ post.description | strip_html | truncatewords: 20 }}</p></a>
+								</div>
+								{% assign count = count | plus:1 %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>		
+
+				{% include footer.html %}
+			</div>
+			<div class="column"></div>
+		</div>		
+	</section>
+</div>
+</body>
+</html>

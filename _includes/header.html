@@ -1,0 +1,21 @@
+<div class="columns main-logo">
+  <div class="column">
+    {% if page.logo == null %}
+      <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/images/logo.png"/></a>
+    {% else %}
+      <a href="{{ site.baseurl }}"><img src="{{ page.logo }}"/></a>
+    {% endif %}        
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="level category-nav">
+      <div class="level-item"><a class="cultura {% if category == 'cultura' %}active{% endif %}" href="{{ site.baseurl }}/cultura">Cultura</a></div>
+      <div class="level-item"><a class="scienze {% if category == 'scienze' %}active{% endif %}" href="{{ site.baseurl }}/scienze">Scienze</a></div>
+      <div class="level-item"><a class="tecnologia {% if category == 'tecnologia' %}active{% endif %}" href="{{ site.baseurl }}/tecnologia">Tecnologia</a></div>
+      <div class="level-item"><a class="viaggi {% if category == 'viaggi' %}active{% endif %}" href="{{ site.baseurl }}/viaggi">Viaggi</a></div>
+      <div class="level-item"><a class="benessere {% if category == 'benessere' %}active{% endif %}" href="{{ site.baseurl }}/benessere">Benessere</a></div>
+    </div>
+  </div>
+</div>

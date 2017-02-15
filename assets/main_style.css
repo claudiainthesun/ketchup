@@ -1,0 +1,343 @@
+/* main color: #ec1f50 */
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+
+section.section {
+	padding-bottom: 0px;
+}
+
+.main-logo {
+	text-align: center;
+}
+
+.main-logo img {
+	height: 20vh;
+}
+
+.navbar {
+	text-align: center;
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+ul.nav.navbar-nav {
+	display: inline-block;
+	float: none;
+}
+
+.category-nav a {
+	font-size: 1.2em;
+	color: #222;
+}
+
+.category-nav a.cultura.active {
+	color: #f6da3f;
+}
+
+.category-nav a.cultura:hover {
+	color: #f6da3f;
+}
+
+.category-nav a.scienze.active {
+	color: #0293d4;
+}
+
+.category-nav a.scienze:hover {
+	color: #0293d4;
+}
+
+.category-nav a.tecnologia.active {
+	color: #b942d2;
+}
+
+.category-nav a.tecnologia:hover {
+	color: #b942d2;
+}
+
+.category-nav a.viaggi.active {
+	color: #ff9c00;
+}
+
+.category-nav a.viaggi:hover {
+	color: #ff9c00;
+}
+
+.category-nav a.benessere.active {
+	color: #3ac97a;
+}
+
+.category-nav a.benessere:hover {
+	color: #3ac97a;
+}
+
+.category-nav a.beauty.active {
+	color: #f959b0;
+}
+
+.category-nav a.beauty:hover {
+	color: #f959b0;
+}
+
+/*.container.main-content {
+	width: 70%;
+}
+
+@media only screen and (max-width : 768px) {
+	.container.main-content {
+		width: 100%;
+	}
+}
+*/
+
+.main-content {
+	/*border-right: 1px solid #eee;*/
+}
+
+.main-content p.image-credit {
+	font-size: 12px;
+}
+
+.article img {
+	width: 100%;
+}
+
+.article p {	
+	
+}
+
+/*.article-window {
+	margin-left: -9px;
+	margin-right: -9px;
+}*/
+
+.article-window a .image-wrapper {
+
+}
+
+.article-window a img {
+	max-width: 100%;
+	padding: 9px;
+}
+
+.article-window a:hover img {
+	box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+}
+
+.article-window a p.title.is-4 {
+	color: #333;
+	padding: 0px 9px;
+}
+
+.article-window a:hover p.title.is-4 {
+	color: #ec1f50;
+}
+
+.article-window a h4 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	padding: 0px 9px;
+}
+
+.article-window a {
+	text-decoration: none;
+}
+
+.article-window a.cultura.active p.subtitle.is-6 {
+	color: #f6da3f;
+}
+
+.article-window a.cultura:hover p.subtitle.is-6 {
+	color: #f6da3f;
+}
+
+.article-window a.scienze.active p.subtitle.is-6 {
+	color: #0293d4;
+}
+
+.article-window a.scienze:hover p.subtitle.is-6 {
+	color: #0293d4;
+}
+
+.article-window a.tecnologia.active p.subtitle.is-6 {
+	color: #b942d2;
+}
+
+.article-window a.tecnologia:hover p.subtitle.is-6 {
+	color: #b942d2;
+}
+
+.article-window a.viaggi.active p.subtitle.is-6 {
+	color: #ff9c00;
+}
+
+.article-window a.viaggi:hover p.subtitle.is-6 {
+	color: #ff9c00;
+}
+
+.article-window a.benessere.active p.subtitle.is-6 {
+	color: #3ac97a;
+}
+
+.article-window a.benessere:hover p.subtitle.is-6 {
+	color: #3ac97a;
+}
+
+.article-window a.beauty.active p.subtitle.is-6 {
+	color: #f959b0;
+}
+
+.article-window a.beauty:hover p.subtitle.is-6 {
+	color: #f959b0;
+}
+
+.article-window a p {
+	color: #555;
+	padding: 0px 9px;
+}
+
+.article-window a:hover p {
+	color: #222;
+}
+
+.columns.social-sharing {
+	margin: 70px 0px;
+	text-align: center;
+}
+
+.columns.social-sharing div:hover {
+	cursor: pointer;
+}
+
+.columns.social-sharing a {
+	text-decoration: none;
+}
+
+.columns.social-sharing div {
+	color: #343434;
+	display: inline-block;
+}
+
+.columns.social-sharing div {
+	height: 32px;
+	line-height: 32px;	
+}
+
+@media only screen and (max-width : 768px) {
+	.twitter-tweet {
+		margin-top: 36px;
+	}
+}
+
+.columns.social-sharing .fb-share .fb-icon {
+	display: inline-block;
+	margin-right: 6px;
+	float: left;
+	background-image: url("./images/facebook_share.png");
+	background-repeat: no-repeat;	
+}
+
+.columns.social-sharing .fb-share .fb-icon {
+	width: 32px;
+	height: 32px;
+	background-position: 0px 0px;
+	/*background-position: -32px 0px; */
+	background-size: 64px 32px;
+}
+
+/*@media only screen and (max-width : 768px) {
+	.columns.social-sharing .fb-share .fb-icon {
+		width: 64px;
+		height: 64px;
+		background-position: 0px 0px;
+		background-size: 128px 64px;
+	}
+}*/
+
+.columns.social-sharing .fb-share:hover {
+	color: #3b579d;
+}
+
+.columns.social-sharing .fb-share:hover .fb-icon {
+	background-position: 0px 0px;
+}
+
+.columns.social-sharing .twitter-tweet .twitter-icon {
+	display: inline-block;
+	margin-right: 6px;
+	float: left;
+	background-image: url("./images/twitter_share.png");
+	background-repeat: no-repeat;	
+}
+
+.columns.social-sharing .twitter-tweet .twitter-icon {
+	width: 32px;
+	height: 32px;
+	background-position: 0px 0px;
+	/*background-position: -32px 0px; */
+	background-size: 64px 32px;
+}
+
+/*@media only screen and (max-width : 768px) {
+	.columns.social-sharing .twitter-tweet .twitter-icon {
+		width: 64px;
+		height: 64px;
+		background-position: 0px 0px;
+		background-size: 128px 64px;
+	}
+}*/
+
+.columns.social-sharing .twitter-tweet:hover {
+	color: #5ea9dd;
+}
+
+.columns.social-sharing .twitter-tweet:hover .twitter-icon {
+	background-position: 0px 0px;
+}
+
+.level.site-footer {
+	padding: 0px 9px;
+	margin-top: 72px;
+	/*border-top: 1px solid #e0e0e0;*/
+}
+
+.site-footer.level {
+	list-style: none;
+}
+
+.site-footer.level .level-item {
+	margin-right: 18px;
+}
+
+.site-footer.level .level-left .level-item {
+	text-align: left;
+	justify-content: left;
+}
+
+.site-footer.level .level-item a {
+	font-size: 18px;
+	color: #777;
+}
+
+.site-footer.level .level-item a:hover {
+	text-decoration: none;
+	color: #ec1f50;
+}
+
+.site-footer.copyright {
+	text-align: right;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ketchup",
+  "authors": [
+    "Alex <indifferentalex@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "normalize-css": "~5.0.0",
+    "bootstrap": "~3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  },  
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
