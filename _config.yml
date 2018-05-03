@@ -18,8 +18,8 @@ email: claudia.ph@hotmail.it
 description: > # this means to ignore newlines until "baseurl:"
   The Catch Up è un giornale digitale che tenta di soddisfare ogni vostra curiosità
   e di farne nascere di nuove.
-baseurl: "/ketchup" # the subpath of your site, e.g. /blog
-url: "https://claudiainthesun.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://thecatchup.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -31,7 +31,7 @@ port: 7000
 theme: minima
 gems:
   - jekyll-feed
-  - jekyll-seo-tag  
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
